@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bienvenue sur le portfolio de Kevin Kenfack, développeur full stack. Découvrez mes compétences en développement web, mes projets et mon expérience professionnelle.">
+  <meta name="keywords" content="Kevin Kenfack, développeur web, développeur full stack, portfolio, projets web, expérience professionnelle, HTML, CSS, JavaScript, Python, PHP, base de données, développement front-end, développement back-end, Node, Angular">
+  <title>Kevin Kenfack - portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Kevin Kenfack">Kevin Kenfack</h1>
+
+          <p class="title">Développeur web</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Afficher les contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:hello@kevinkenfack.com" class="contact-link">hello@kevinkenfack.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Téléphone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Naissance</p>
+
+              <time datetime="17-05-2000">17 Mai, 2000</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localisation</p>
+
+              <address>Yaoundé, Paris, Douala, Lyon</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>A Propos</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Mon CV</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Réaliations</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="a propos">
+
+        <header>
+          <h2 class="h2 article-title">Qui suis-je ?</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Je suis un développeur de logiciels compétent avec une solide expérience
+            en Python et en JavaScript. Mon expertise s'étend également à l'utilisation
+            de frameworks tels que React, Node.js et Django, des outils puissants
+            pour la création d'applications web robustes et performantes. J'ai
+            travaillé sur une variété de projets, de la création d'applications
+            web interactives à la mise en place de systèmes back-end complexes.
+          </p>
+
+          <p>
+            En plus de ma maîtrise des langages de programmation et des frameworks,
+            j'apprends rapidement et je collabore étroitement avec les clients pour
+            créer des solutions efficaces, évolutives et conviviales qui résolvent
+            les problèmes du monde réel. Travaillons ensemble pour donner vie à vos idées !
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Ce que je fais</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Design web</h4>
+
+                <p class="service-item-text">
+                  Le design le plus moderne et le plus qualitatif réalisé à un niveau professionnel.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Développement web</h4>
+
+                <p class="service-item-text">
+                  Développement de sites et d`application de haute qualité au niveau professionnel.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Applications mobiles</h4>
+
+                <p class="service-item-text">
+                  Développement professionnel d'applications pour iOS et Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Conception graphique</h4>
+
+                <p class="service-item-text">
+                  Je suis également impliqué dans la conception graphique pour enrichir visuellement vos projets.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI / UX design</h4>
+
+                <p class="service-item-text">
+                  Je me consacre également à la conception UI / UX, en veillant à créer des expériences
+                  utilisateur fluides et esthétiquement agréables.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  Je réalise des photos de haute qualité de toute catégorie à un niveau professionnel.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Témoignages</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title> Laura</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    J'ai eu le privilège de travailler avec Kevin sur plusieurs projets de développement.
+                    Sa passion pour la programmation est palpable, et cela se reflète dans la qualité de son travail.
+                    Kevin ne se contente pas de résoudre des problèmes, il crée des solutions élégantes qui
+                    améliorent réellement les produits. Son dévouement à l'excellence et sa volonté d'aller
+                    au-delà des attentes en font un collaborateur exceptionnel.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Yannick</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Kevin est bien plus qu'un développeur compétent, c'est un véritable atout pour toute
+                    équipe de développement. Sa capacité à maîtriser de nouvelles technologies rapidement
+                    est impressionnante. Il est également un communicateur exceptionnel, capable de traduire
+                    des concepts techniques en termes compréhensibles pour les non-initiés. Travailler avec
+                    Kevin a été une expérience enrichissante, et je le recommande vivement.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Stephane</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Lorsque nous avons fait appel à Kevin pour concevoir notre site web, nous avons été
+                    impressionnés par son souci du détail et sa créativité. Il a su capter l'essence de
+                    notre entreprise et créer une interface utilisateur conviviale et esthétiquement
+                    plaisante. Kevin est un professionnel dévoué qui se donne à fond pour satisfaire
+                    ses clients. Nous sommes ravis du résultat final.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Kevin a été un partenaire de confiance tout au long de notre projet de développement
+                    d'application. Son expertise en développement full-stack nous a permis de surmonter
+                    des défis techniques complexes. Il a fait preuve d'une grande flexibilité pour
+                    répondre à nos besoins changeants et a toujours livré dans les délais. Travailler
+                    avec Kevin est synonyme d'efficacité et de qualité.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+               <div class="modal-container" data-modal-container>
+
+                 <div class="overlay" data-overlay></div>
+
+                 <section class="testimonials-modal">
+
+                   <button class="modal-close-btn" data-modal-close-btn>
+                     <ion-icon name="close-outline"></ion-icon>
+                   </button>
+
+                   <div class="modal-img-wrapper">
+                     <figure class="modal-avatar-box">
+                       <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                     </figure>
+
+                     <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                   </div>
+
+                   <div class="modal-content">
+
+                     <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                     <time datetime="2021-06-14">14 June, 2021</time>
+
+                     <div data-modal-text>
+                       <p>
+                         Je tiens à exprimer ma sincère gratitude envers Kevin pour son travail exceptionnel.
+                         En tant qu'entrepreneur, j'ai souvent eu besoin de solutions technologiques sur
+                         mesure pour faire avancer mon entreprise. C'est là que Kevin est intervenu,
+                         et il a été un véritable catalyseur de réussite.
+                       </p>
+                     </div>
+
+                   </div>
+
+                 </section>
+
+               </div>
+
+
+               <!--
+                 - clients
+               -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="mon cv">
+
+        <header>
+          <h2 class="h2 article-title">Mon CV</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Université de Ngoa Ekele</h4>
+
+              <span>2020 — 2021</span>
+
+              <p class="timeline-text">
+                Pendant une partie de mon parcours éducatif, j'ai eu l'opportunité d'étudier
+                à l'Université de Ngoa Ekele au Cameroun. Cette expérience m'a permis d'acquérir
+                des connaissances précieuses et de collaborer avec des professeurs et des collègues exceptionnels.
+                Mon temps passé à l'Université de Ngoa Ekele a enrichi ma formation et a contribué à forger
+                ma passion pour le développement de logiciels et la conception graphique.
+
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Hacker rank online</h4>
+
+              <span>2022 — 2007</span>
+
+              <p class="timeline-text">
+                J'ai également développé une solide expertise en sécurité des applications web et
+                logiciels grâce à ma participation active sur la plateforme HackerRank Online.
+                C'est là que j'ai plongé dans le monde de la cybersécurité, en apprenant les
+                dernières techniques pour protéger les applications et les données. Ma formation
+                sur HackerRank m'a permis de renforcer la sécurité de mes propres projets et de
+                contribuer à la protection en ligne de manière plus large.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">udemy</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                C'est sur la plateforme Udemy que j'ai poussé mes compétences en programmation
+                web à un niveau supérieur. Les cours de haute qualité et les ressources disponibles
+                m'ont permis d'explorer en profondeur les technologies web modernes, d'améliorer mon
+                expertise et de rester à jour avec les dernières tendances. Udemy a joué un rôle
+                essentiel dans mon développement en tant que développeur full-stack, en me
+                fournissant une formation continue et de qualité.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Développeur Web - TAGUE DIGITAL FR</h4>
+
+              <span>2022 — Aujourd`hui</span>
+
+              <p class="timeline-text">
+                Je suis fier d'exercer en tant que développeur web au sein de l'équipe de Tague Digital FR.
+                Cette opportunité m'a permis de mettre en pratique mes compétences en développement,
+                de collaborer sur des projets passionnants et de contribuer à la croissance numérique
+                deS entrepriseS. Chez Tague Digital FR, nous visons l'excellence en matière de
+                développement numériques des entreprises, et je suis ravi de faire partie de cette mission.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Graphiste</h4>
+
+              <span>Pendant 4 mois</span>
+
+              <p class="timeline-text">
+                Pendant une période de mon parcours professionnel, j'ai eu le privilège de travailler
+                en tant que graphiste au sein d'une petite entreprise au Cameroun. Mon rôle était
+                de donner vie aux idées visuelles, de créer des designs percutants et de contribuer
+                à l'identité visuelle de l'entreprise. Cette expérience m'a permis d'affiner mes
+                compétences en conception graphique et de jouer un rôle essentiel dans la
+                communication visuelle de l'entreprise.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire Développeur backend - glothelo ecommerce</h4>
+
+              <span>2019 — 2021</span>
+
+              <p class="timeline-text">
+                J'ai eu l'opportunité d'exercer en tant que développeur backend chez Glothelo eCommerce.
+                Cette expérience m'a permis de me plonger dans le développement des fonctionnalités
+                essentielles pour une plateforme e-commerce. J'ai contribué à la création de
+                solutions robustes et performantes pour répondre aux besoins de l'entreprise.
+                Mon rôle chez Glothelo eCommerce m'a enrichi sur le plan professionnel et m'a
+                permis de jouer un rôle clé dans le succès de la plateforme.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Mes compétences</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Développement Web</h5>
+                <data value="92">92%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 92%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Photoshop / Illustrator</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Javascript</h5>
+                <data value="83">83%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 83%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">PHP</h5>
+                <data value="55">55%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 55%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">node.js</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="réaliations">
+
+        <header>
+          <h2 class="h2 article-title">Réaliations</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Toutes</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Design Web</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Développement Web</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Sélectionner une catégorie</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Toutes</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Design Web</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Développement Web</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="développement web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Développement Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="développement web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Développement Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="design Web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Design Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="design web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Design web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="design web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Design web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="développement web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Développement Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="développement web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Conférences sur le design en 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">23 février 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Conférences sur le design en 2022</h3>
+
+                  <p class="blog-text">
+                    L'année 2022 a été marquée par une série de conférences fascinantes dans le domaine du design.
+                    Des esprits créatifs du monde entier se sont réunis pour partager leurs idées novatrices et
+                    inspirantes. Ces événements ont offert aux professionnels du design une occasion unique
+                    d'explorer les dernières tendances, de se connecter avec des experts de renom et de
+                    repousser les limites de la créativité. Que vous soyez un designer établi ou un étudiant
+                    passionné, ces conférences ont permis de découvrir de nouvelles perspectives et de
+                    renforcer la communauté mondiale du design. Explorez avec nous certains des moments
+                    forts de ces événements et plongez dans l'univers stimulant du design en 2022.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Les meilleures techniques de development web" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Développement web</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">23 mai 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Les meilleures techniques de development web</h3>
+
+                  <p class="blog-text">
+                    Le développement web est un domaine en constante évolution, et en 2022,
+                    de nombreuses techniques et approches ont émergé comme des incontournables
+                    pour les développeurs. Cette année a vu l'essor de technologies telles que le
+                    JAMstack, les applications web progressives (PWA) et l'intégration croissante
+                    de l'intelligence artificielle dans le développement. Les développeurs web du
+                    monde entier ont cherché à perfectionner leurs compétences dans ces domaines
+                    pour créer des expériences en ligne plus rapides, plus interactives et plus conviviales.
+                    Plongez avec nous dans l'univers en constante mutation du développement web et
+                    découvrez les techniques qui ont marqué l'année 2022
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Wordpress / Shopify" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">CMS</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">23 septembre 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Wordpress / Shopify</h3>
+
+                  <p class="blog-text">
+                    Le choix entre WordPress et Shopify est un dilemme courant pour ceux qui
+                    souhaitent créer des sites web ou des boutiques en ligne. En 2022, cette
+                    question a continué de susciter des débats passionnés parmi les créateurs et
+                    les entrepreneurs en ligne. WordPress, avec sa flexibilité et sa capacité à
+                    créer des sites web hautement personnalisés, a attiré ceux qui recherchent
+                    un contrôle total sur leur présence en ligne. De l'autre côté, Shopify
+                    s'est affirmé comme une plateforme incontournable pour le commerce électronique,
+                    offrant des fonctionnalités spécifiquement adaptées aux besoins des entreprises
+                    de vente en ligne. Dans ce contexte, il est essentiel de bien comprendre les
+                    forces et les limites de chaque plateforme afin de prendre la décision qui
+                    correspond le mieux à vos objectifs et à vos besoins en ligne.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="Interactions de l'interface utilisateur de la semaine" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">23 mars 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Interactions de l'interface utilisateur de la semaine</h3>
+
+                  <p class="blog-text">
+                    Chaque semaine, l'univers du design d'interface utilisateur est enrichi par une multitude
+                    d'interactions fascinantes qui captivent les créateurs et les utilisateurs du monde entier.
+                    Ces interactions sont bien plus que de simples éléments visuels ; elles sont la clé de
+                    l'engagement et de la convivialité dans un monde de plus en plus numérique.
+                    De l'élégance des micro-interactions aux conceptions de navigation innovantes,
+                    ces moments de créativité redéfinissent constamment la manière dont nous
+                    interagissons avec la technologie. En explorant les interactions de
+                    l'interface utilisateur de la semaine, nous découvrons des exemples
+                    inspirants de design centré sur l'utilisateur qui nous rappellent
+                    l'importance de l'esthétique et de la fonctionnalité dans la conception
+                    de produits numériques.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="Programmation back end" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programmation web</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">23 juin 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Programmation web back end</h3>
+
+                  <p class="blog-text">
+                    La programmation web back-end reste un pilier essentiel de la création de sites
+                    web et d'applications en 2022. Les développeurs back-end travaillent en coulisses
+                    pour assurer la gestion des serveurs, des bases de données et la logique de
+                    fonctionnement des applications. Leur expertise est cruciale pour garantir
+                    des performances optimales et une expérience utilisateur fluide. En 2022,
+                    de nombreuses technologies back-end ont évolué, ouvrant la voie à de
+                    nouvelles possibilités de développement web. Découvrez comment les
+                    développeurs back-end ont contribué à façonner l'expérience en
+                    ligne et continuent d'assurer le succès des projets web.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Programmation web" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programmation web</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">23 juin 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Programmation web front end</h3>
+
+                  <p class="blog-text">
+                    La programmation web front-end est le visage interactif de chaque site web
+                    et application que nous utilisons. En 2022, les développeurs front-end ont
+                    joué un rôle central en créant des interfaces utilisateur intuitives et attrayantes.
+                    Ils ont maîtrisé des technologies telles que HTML, CSS et JavaScript pour donner
+                    vie à des designs innovants. Cette année a été marquée par l'essor de frameworks
+                    comme React, Angular et Vue.js, qui ont permis de créer des expériences
+                    utilisateur exceptionnelles. Explorez comment les développeurs front-end
+                    ont façonné l'aspect et la convivialité du web en 2022, et comment
+                    leur expertise continue de transformer notre expérience en ligne.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Discutons de votre projet👋</h3>
+          <form id="contact-form" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Nom complet" required data-form-input id="fullname">
+
+              <input type="email" name="email" class="form-input" placeholder="Adresse e-mail" required data-form-input id="email">
+
+              <input type="tel" name="phone" class="form-input" placeholder="Contact / whatsapp" required data-form-input id="phone">
+
+              <input type="text" name="subject" class="form-input" placeholder="Sujet" required data-form-input id="subject">
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Votre message" required data-form-input id="message"></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Envoyer le message</span>
+            </button> <br>
+            <div id="form-message" style="font-size: 13px ; text-align: center"></div>
+
+          </form>
+
+
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("qavUyzZMUkURhQeEn"); // Remplacez "votre_user_id" par votre identifiant d'utilisateur Email.js
+    })();
+  </script>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.querySelector('#contact-form');
+      const formMessage = document.querySelector('#form-message');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Récupérez les données du formulaire
+        const fullname = document.querySelector('#fullname').value;
+        const email = document.querySelector('#email').value;
+        const phone = document.querySelector('#phone').value;
+        const subject = document.querySelector('#subject').value;
+        const message = document.querySelector('#message').value;
+
+        // Utilisez Email.js pour envoyer l'e-mail
+        emailjs.send("service_ji49vpk", "template_9acx7jb", {
+          to_name: "Kevin Kenfack", // Nom du destinataire (facultatif)
+          from_name: fullname,
+          from_email: email,
+          phone: phone,
+          message: message,
+          subject: subject,
+        })
+                .then(function (response) {
+                  // Réinitialisez le formulaire
+                  form.reset();
+
+                  // Affichez le message de succès en vert
+                  formMessage.innerHTML = '<div class="success-message" style="color: #00fcc7;">Votre message a été envoyé avec succès.</div>';
+                }, function (error) {
+                  // Affichez le message d'erreur en rouge
+                  formMessage.innerHTML = '<div class="error-message" style="color: #e83b68;">Erreur il faut essayer plus tard</div>';
+                });
+      });
+    });
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
