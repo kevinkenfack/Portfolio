@@ -445,7 +445,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(234, 44%, 19%, 0.71);
+  background: hsla(234, 44%, 19%, 0.59);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -575,7 +575,7 @@ main {
   left: 0;
   transform: translate(15px, -25px);
   background: var(--bg-gradient-onyx);
-  border-radius: 14px;
+
   box-shadow: var(--shadow-1);
 }
 
@@ -1414,8 +1414,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .testimonials-avatar-box {
     transform: translate(30px, -30px);
-    border-radius: 20px;
+    border-radius: 0;
+    border: solid 2px;
+    /* border-image: linear-gradient(405deg, #00fcc7, #e83b68);  Dégradé en diagonale */
+    /* border-image-slice: 1; /* Pour utiliser le dégradé sur toute la bordure */
   }
+
+
 
   .testimonials-avatar-box img { width: 80px; }
 
@@ -1449,7 +1454,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .modal-avatar-box {
-    border-radius: 18px;
+    border-radius: 0px;
     margin-bottom: 0;
   }
 
